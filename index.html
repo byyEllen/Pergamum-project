@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Catálogo Online - Pergamum</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="pergamum.png" type="image/png" />
+
+</head>
+<body>
+<header>
+  <div class="banner">
+    <img src="logo.png" alt="Logo Cruzeiro do Sul" class="logo" />
+    <h1 class="titulo-central" data-i18n="titulo">Seja bem-vindo ao Catálogo Online</h1>
+  </div>
+</header>
+
+<main>
+  <div class="login-container">
+    <h2 data-i18n="login">Login</h2>
+    <form>
+      <label for="matricula" data-i18n="matricula">Matrícula:</label>
+      <input type="text" id="matricula" placeholder="Digite sua matrícula" required />
+
+      <label for="senha" data-i18n="senha">Senha:</label>
+      <div class="senha-container">
+        <input type="password" id="senha" placeholder="Digite sua senha" required />
+        <button type="button" class="ver-senha" onclick="verSenha()">👁️</button>
+      </div>
+
+      <p class="info" data-i18n="info">Após o login, você será direcionado ao acervo online da biblioteca.</p>
+
+      <button type="submit" class="btn-acessar" data-i18n="acessar">Acessar</button>
+    </form>
+  </div>
+
+  <div class="footer-links">
+    <a href="minhabiblioteca.html" data-i18n="minhabiblioteca">Minha biblioteca</a>
+    <a href="#" data-i18n="esqueceu">Esqueceu a senha?</a>
+    <a href="#" data-i18n="trocar">Trocar senha</a>
+    <a href="#" data-i18n="primeiro">Primeiro acesso</a>
+  </div>
+</main>
+
+<footer class="rodape">
+  <div class="idiomas">
+    <span><i class="fa-solid fa-language"></i> <span data-i18n="idioma">Idioma:</span></span>
+    <button onclick="setLanguage('pt')"><img src="portugues.jpg" alt="Português" /> Português</button> |
+    <button onclick="setLanguage('en')"><img src="ingles.jpg" alt="English" /> English</button> |
+    <button onclick="setLanguage('es')"><img src="espanhol.jpg" alt="Español" /> Español</button>
+  </div>
+
+  <div class="direitos">
+    <span>©2025. <a href="#">Pergamum</a>. <span data-i18n="direitos">Todos os direitos reservados.</span></span>
+  </div>
+
+  <div class="navegadores">
+    <span data-i18n="navegadores">Navegadores - versões mínimas:</span>
+    <img src="chrome.png" alt="Chrome" /> 104.0.0.1
+    <img src="firefox.png" alt="Firefox" /> 110.0.0.1
+    <img src="edge.png" alt="Edge" /> 110.0.0.1
+  </div>
+
+  <button class="suporte" data-i18n="suporte">🎧 Suporte</button>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

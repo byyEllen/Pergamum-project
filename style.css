@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f1f1f1;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+header {
+  background-color: #1d278e;
+  color: white;
+  padding: 1rem;
+  position: relative;
+  height: 120px; 
+}
+
+.banner {
+  position: relative;
+  height: 100%;
+}
+
+.logo {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 250px;
+  height: auto;
+   
+}
+
+.titulo-central {
+  text-align: center;
+  font-size: 1.8rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+
+.login-container {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-container h2 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin: 1rem 0 0.3rem;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.senha-container {
+  position: relative;
+  display: flex;
+}
+
+.ver-senha {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-left: -2rem;
+  color: #1a237e;
+}
+
+.info {
+  margin: 1rem 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.btn-acessar {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #1a237e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.btn-acessar:hover {
+  background-color: #0d154b;
+}
+
+.footer-links {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.footer-links a {
+  display: block;
+  color: #1a237e;
+  text-decoration: none;
+  margin: 0.3rem 0;
+  font-size: 0.9rem;
+}
+footer.rodape {
+  background-color: #e3e3e6;
+  color: #000;
+  padding: 1rem;
+  position: relative;
+  font-size: 0.9rem;
+  border-top: 1px solid #ccc;
+}
+
+footer .idiomas,
+footer .direitos,
+footer .navegadores {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.5rem;
+}
+
+footer .idiomas img,
+footer .navegadores img {
+  height: 18px;
+  vertical-align: middle;
+}
+
+footer .direitos a {
+  font-weight: bold;
+  color: #004a91;
+  text-decoration: none;
+}
+
+footer .suporte {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: #002b5c;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
